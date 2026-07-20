@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Student Registration Form</h2>
+
+<form onsubmit="return validateForm()">
+
+    <label>Full Name:</label><br>
+    <input type="text" id="name"><br><br>
+
+    <label>Email:</label><br>
+    <input type="text" id="email"><br><br>
+
+    <label>Mobile Number:</label><br>
+    <input type="text" id="mobile"><br><br>
+
+    <label>Password:</label><br>
+    <input type="password" id="password"><br><br>
+
+    <label>Confirm Password:</label><br>
+    <input type="password" id="confirmPassword"><br><br>
+
+    <label>Gender:</label><br>
+
+    <input type="radio" name="gender" value="Male"> Male
+    <input type="radio" name="gender" value="Female"> Female
+    <br><br>
+
+    <label>City:</label><br>
+
+    <select id="city">
+        <option value="">Select City</option>
+        <option>Pune</option>
+        <option>Mumbai</option>
+        <option>Nashik</option>
+        <option>Nagpur</option>
+    </select>
+
+    <br><br>
+
+    <button type="submit">Register</button>
+
+</form>
+
+<script src="script.js"></script>
+
+</body>
+</html>

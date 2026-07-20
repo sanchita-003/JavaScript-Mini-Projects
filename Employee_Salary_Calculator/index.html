@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Salary Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Employee Salary Calculator</h2>
+
+<label>Employee Name:</label><br>
+<input type="text" id="empName"><br><br>
+
+<label>Basic Salary:</label><br>
+<input type="number" id="basicSalary"><br><br>
+
+<button onclick="calculateSalary()">Calculate Salary</button>
+
+<br><br>
+
+<table border="1" cellpadding="10">
+    <thead>
+        <tr>
+            <th>Employee</th>
+            <th>Basic Salary</th>
+            <th>HRA</th>
+            <th>DA</th>
+            <th>PF</th>
+            <th>Gross Salary</th>
+            <th>Net Salary</th>
+        </tr>
+    </thead>
+
+    <tbody id="result">
+
+    </tbody>
+</table>
+
+<script src="script.js"></script>
+
+</body>
+</html>

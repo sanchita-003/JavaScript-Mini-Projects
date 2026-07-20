@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Grade Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+    <h2>Student Grade Calculator</h2>
+
+    <input type="text" id="name" placeholder="Student Name"><br><br>
+
+    <input type="number" id="sub1" placeholder="Subject 1"><br><br>
+    <input type="number" id="sub2" placeholder="Subject 2"><br><br>
+    <input type="number" id="sub3" placeholder="Subject 3"><br><br>
+    <input type="number" id="sub4" placeholder="Subject 4"><br><br>
+    <input type="number" id="sub5" placeholder="Subject 5"><br><br>
+
+    <button onclick="calculateGrade()">Calculate</button>
+
+    <br><br>
+
+    <table border="1" cellpadding="10">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Total</th>
+                <th>Percentage</th>
+                <th>Grade</th>
+            </tr>
+        </thead>
+
+        <tbody id="result">
+
+        </tbody>
+    </table>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

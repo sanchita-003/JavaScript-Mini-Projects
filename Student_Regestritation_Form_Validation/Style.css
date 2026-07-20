@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+
+body{
+
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:
+    linear-gradient(rgba(15,23,42,.82),rgba(30,41,59,.85)),
+    url("https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1600&q=80");
+
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+
+    color:white;
+
+    padding:30px;
+}
+
+
+form{
+
+    width:100%;
+    max-width:520px;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.15);
+
+    border-radius:22px;
+
+    padding:35px;
+
+    box-shadow:0 25px 45px rgba(0,0,0,.35);
+}
+
+
+h2{
+
+    position:absolute;
+
+    top:35px;
+
+    font-size:36px;
+
+    letter-spacing:1px;
+
+    text-shadow:0 0 12px #38bdf8;
+}
+
+
+label{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    font-weight:500;
+}
+
+
+input[type=text],
+input[type=password],
+select{
+
+    width:100%;
+
+    padding:14px;
+
+    border:none;
+
+    outline:none;
+
+    border-radius:12px;
+
+    background:rgba(255,255,255,.10);
+
+    color:white;
+
+    font-size:15px;
+
+    border:1px solid rgba(255,255,255,.15);
+
+    transition:.3s;
+}
+
+input:focus,
+select:focus{
+
+    border:1px solid #38bdf8;
+
+    box-shadow:0 0 15px rgba(56,189,248,.45);
+
+    transform:scale(1.02);
+}
+
+
+input[type=radio]{
+
+    margin-right:6px;
+    margin-left:10px;
+
+    accent-color:#38bdf8;
+}
+
+
+select{
+
+    cursor:pointer;
+}
+
+option{
+
+    color:black;
+}
+
+button{
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:40px;
+
+    cursor:pointer;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    color:white;
+
+    background:linear-gradient(135deg,#2563eb,#06b6d4);
+
+    transition:.3s;
+
+    margin-top:10px;
+}
+
+button:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 15px 30px rgba(37,99,235,.45);
+}
+
+button:active{
+
+    transform:scale(.96);
+}
+
+
+@media(max-width:600px){
+
+form{
+
+    padding:25px;
+}
+
+h2{
+
+    font-size:28px;
+
+    text-align:center;
+
+    top:20px;
+}
+
+}
